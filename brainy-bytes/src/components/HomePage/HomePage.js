@@ -1,5 +1,5 @@
 import './HomePage.css';
-import BBLogo from './BBLogo.png';
+import BBLogo from './BBLogo.svg';
 import PlayButton from './PlayButton';
 function HomePage() {
     return (
