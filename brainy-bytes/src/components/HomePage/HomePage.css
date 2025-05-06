@@ -1,0 +1,17 @@
+.home-page {
+    background-color: #282c34;
+    color: white;
+
+    display: grid;
+
+    padding: 50px;
+
+    width: calc(100vw - 100px);
+    height: calc(100vh - 100px);
+
+}
+
+.logo {
+    max-width: 40vw;
+    height: auto;
+}
