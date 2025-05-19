@@ -1,10 +1,11 @@
 import './PlayButton.css';
-import { Link } from 'react-router-dom';
-function PlayButton({children}) {
+import { useNavigate } from 'react-router-dom';
+function PlayButton({route, text}) {
+    const navigate = useNavigate();
     return (
-        <Link to="/Topics">
-            <button className = "play-button">{children}</button>
-        </Link>
+        <button className="play-button" onClick={() => navigate(route)}>
+            {text}
+        </button>
     );
 }
 

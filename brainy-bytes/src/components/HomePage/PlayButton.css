@@ -1,19 +1,23 @@
 .play-button {
-    background-color: #eb631e;
+  display: inline-block;
+  background-color: #eb631e;
 
-    border-radius: 30%;
-    border:none;
+  border-radius: 30%;
+  border: none;
 
-    text-align: center;
-    font-family: Monaco;
-    font-size: 100%;
-    color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: Monaco;
+  font-size: 100%;
+  color: rgb(255, 255, 255);
 
-    cursor: pointer;
-    transition-duration: 0.4s;
-    margin: 30px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  margin: 30px;
+
+  padding: 12px 24px;
+  text-decoration: none; /* Important: removes underline */
 }
 
 .play-button:hover {
-    background-color: #aa4817;
+  background-color: #aa4817;
 }

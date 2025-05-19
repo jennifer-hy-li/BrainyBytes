@@ -6,8 +6,8 @@ function HomePage() {
         // TODO: Add routing ability to buttons
         <div className = 'home-page'>
             <img src={BBLogo} alt="Logo" class="logo" />
-            <PlayButton>Login</PlayButton>
-            <PlayButton>Play as Guest</PlayButton>
+            <PlayButton route="/AuthPage" text="Login"/>
+            <PlayButton route="/Topics" text="Play as Guest"/>
         </div>
         
     )
