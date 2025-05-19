@@ -1,7 +1,10 @@
 import './PlayButton.css';
+import { Link } from 'react-router-dom';
 function PlayButton({children}) {
     return (
-        <button className = "play-button">{children}</button>
+        <Link to="/Topics">
+            <button className = "play-button">{children}</button>
+        </Link>
     );
 }
 
