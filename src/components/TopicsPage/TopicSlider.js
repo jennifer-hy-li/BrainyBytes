@@ -69,13 +69,14 @@ function TopicSlider({ topics }) {
         );
     }
     const navigate = useNavigate();
+
     
     return (
         <div style ={carousolStyle}>
             <div style = {previousArrow} onClick={goToPrevious}>⇐</div>
             <div style = {nextArrow} onClick={goToNext}>⇒</div>
             <div style={slideStyleLeft}></div>
-            <div style ={slideStyle} onClick={() => navigate("/Levels")}></div>
+            <div style ={slideStyle} onClick={() => navigate(`/Topics/${topics[currentSlide].title}`)}></div>
             <div style ={slideStyleRight}></div>
         </div>
         
