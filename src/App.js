@@ -18,8 +18,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Levels" element={<Levels />} />
           <Route path="/Topics" element={<Topics />} />
+          <Route path="/Topics/:topicId" element={<Levels />}  />
           <Route path="/AuthPage" element={<AuthPage />} />
         </Routes>
       </BrowserRouter>
