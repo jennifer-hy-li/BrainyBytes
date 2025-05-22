@@ -1,0 +1,8 @@
+.dark-wrapper-grid {
+    display: grid;
+    width: 100vw;
+    min-height: 100vh; /* allow it to grow */
+    background-color: #13165A;
+    grid-template-columns: 1fr 3fr;
+    place-items: center;
+}

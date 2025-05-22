@@ -1,5 +1,5 @@
 .Levels-grid {
-    background-color: #282c34;
+    background-color: #13165A;
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-gap: 20px;
@@ -9,4 +9,26 @@
     max-width: 100vw;
     max-height: 100vh;
     padding: 40px;
+}
+
+.level-button {
+    background-color: #eb631e;
+    
+    aspect-ratio: 1;
+    flex-grow: 1;
+
+    border-radius: 5%;
+    border:none;
+
+    text-align: center;
+    font-family: Copperplate;
+    font-size: 200%;
+    color: rgb(255, 255, 255);
+
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.level-button:hover {
+    background-color: #aa4817;
 }

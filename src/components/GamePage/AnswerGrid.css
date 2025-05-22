@@ -1,0 +1,9 @@
+.answer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 20px;
+}
+
+.correct {
+    background-color: aquamarine;
+}
