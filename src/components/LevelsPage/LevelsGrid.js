@@ -1,12 +1,14 @@
-import LevelButton from './LevelButton';
+import { useParams, useNavigate } from 'react-router-dom';
 import './LevelsGrid.css'
 
 function LevelsGrid(){
     const levels = Array.from({length:16}, (_,i) => i+1);
+    const { topicId } = useParams();
+    const navigate = useNavigate();
     return(
         <div className="Levels-grid">
             {levels.map((level) => (
-                <LevelButton key={level}>{level}</LevelButton>
+                <button onClick={() => navigate(`/Play/${topicId}/${level}`)} className ="level-button">{level}</button>
             ))}
         </div>
     )

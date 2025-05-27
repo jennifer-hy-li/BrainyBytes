@@ -1,5 +1,14 @@
 .App {
   text-align: center;
-  background-color: #282c34;
+  display: block;
+  background-color: #13165A;
   color: white;
+  width: 100vw;
+  height: 100vh;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #13165A;
+  overflow-x: hidden; /* prevent sideways scrolling */
 }

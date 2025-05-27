@@ -8,6 +8,7 @@ import Topics from './pages/Topics';
 import AuthPage from './pages/AuthPage';
 import { Amplify } from 'aws-amplify';
 import awsExports from './aws-exports';
+import GameplayPage from './pages/GameplayPage';
 Amplify.configure(awsExports);
 
 
@@ -15,11 +16,12 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Navbar />
+        {/* <Navbar /> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Topics" element={<Topics />} />
           <Route path="/Topics/:topicId" element={<Levels />}  />
+          <Route path="/Play/:topicId/:level" element={<GameplayPage />}  />
           <Route path="/AuthPage" element={<AuthPage />} />
         </Routes>
       </BrowserRouter>
