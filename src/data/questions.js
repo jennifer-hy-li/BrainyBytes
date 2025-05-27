@@ -18,51 +18,99 @@ export const questions = {
     integer_addition: {
       name: "Integer Addition",
       levels: [
-        [{
-          question: "7 + (- 8) =",
-          answers: ["15", "-15", "-1", "1"],
-          correct: "-1"
-        },
-        {
-          question: "(-4) + (-5) =",
-          answers: ["9", "-9", "20", "1"],
-          correct: "-9"
-        }],
-        [{
+        [
+          {
+            question: "7 + (- 8) =",
+            answers:  [
+              { id: 1, answer: "15" },
+              { id: 2, answer: "-15" },
+              { id: 3, answer: "-1" },
+              { id: 4, answer: "1" }
+            ],
+            correctID: [3]
+          },
+          {
+            question: "(-4) + (-5) =",
+            answers:  [
+              { id: 1, answer: "9" },
+              { id: 2, answer: "-9" },
+              { id: 3, answer: "20" },
+              { id: 4, answer: "1" }
+            ],
+            correctID: [2]
+          }
+        ],
+        [
+          {
             question: "112 + 74",
-            answers: ["186", "86", "816", "88"],
-            correct: "186"
+            answers:  [
+              { id: 1, answer: "186" },
+              { id: 2, answer: "86" },
+              { id: 3, answer: "816" },
+              { id: 4, answer: "88" }
+            ],
+            correctID: [1]
           },
           {
               question: "231 + 101",
-              answers: ["332", "232", "231", "321"],
-              correct: "332"
-        }]
+              answers:  [
+                { id: 1, answer: "332" },
+                { id: 2, answer: "232" },
+                { id: 3, answer: "231" },
+                { id: 4, answer: "321" }
+              ],
+              correctID: [1]
+          }
+        ]
       ]
     },
     long_addition: {
       name: "long_addition",
       levels: [
-        [{
-          question: "112 + 74",
-          answers: ["186", "86", "816", "88"],
-          correct: "186"
-        },
-        {
-            question: "231 + 101",
-            answers: ["332", "232", "231", "321"],
-            correct: "332"
-        }],
-        [{
+        [
+          {
+            question: "112 + 74",
+            answers:  [
+              { id: 1, answer: "186" },
+              { id: 2, answer: "86" },
+              { id: 3, answer: "816" },
+              { id: 4, answer: "88" }
+            ],
+            correctID: [1]
+          },
+          {
+              question: "231 + 101",
+              answers:  [
+                { id: 1, answer: "332" },
+                { id: 2, answer: "232" },
+                { id: 3, answer: "231" },
+                { id: 4, answer: "321" }
+              ],
+              correctID: [1]
+          }
+        ],
+        [
+          {
             question: "7 + (- 8) =",
-            answers: ["15", "-15", "-1", "1"],
-            correct: "-1"
+            answers:  [
+              { id: 1, answer: "15" },
+              { id: 2, answer: "-15" },
+              { id: 3, answer: "-1" },
+              { id: 4, answer: "1" }
+            ],
+            correctID: [3]
           },
           {
             question: "(-4) + (-5) =",
-            answers: ["9", "-9", "20", "1"],
-            correct: "-9"
-        }]
+            answers:  [
+              { id: 1, answer: "9" },
+              { id: 2, answer: "-9" },
+              { id: 3, answer: "20" },
+              { id: 4, answer: "1" }
+            ],
+            correctID: [2]
+          }
+        ]
       ]
     }
 };

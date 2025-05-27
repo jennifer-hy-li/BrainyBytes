@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import './AnswerGrid.css';
-function AnswerGrid({answers, correctAnswer}) {
+function AnswerGrid({answers, correctID}) {
     const [selectedAnswer, setSelectedAnswer] = useState(null);
     const [buttonStyle, setButtonStyle] = useState("level-button");
 
     //TODO: Make it so that only the correct button turns green (not all buttons)
-    const handleClick = (answer, index) => {
-        if(answer === correctAnswer){
+    const handleClick = (answer) => {
+        if(correctID.includes(answer.id)){
             setButtonStyle('correct');
         }
 
@@ -14,8 +14,8 @@ function AnswerGrid({answers, correctAnswer}) {
     return (
 
         <div className = "answer-grid">
-            {answers.map((answer, index) => (
-                    <button onClick={() =>handleClick(answer, index)} className ={buttonStyle} disabled={selectedAnswer !== null}>{answer}</button>
+            {answers.map((answer) => (
+                    <button onClick={() =>handleClick(answer)} className ={buttonStyle} disabled={selectedAnswer !== null}>{answer.answer}</button>
             ))}
         
         </div>

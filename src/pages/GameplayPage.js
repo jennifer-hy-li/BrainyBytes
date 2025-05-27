@@ -29,7 +29,7 @@ function GameplayPage() {
 
             {/* answers */}
             <div>
-                <AnswerGrid answers = {levelData[0].answers} correctAnswer = {levelData[0].correct}></AnswerGrid>
+                <AnswerGrid answers = {levelData[0].answers} correctID = {levelData[0].correctID}></AnswerGrid>
             </div>
 
         </div>
