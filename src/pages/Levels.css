@@ -1,0 +1,7 @@
+.Levels-Page{
+    display: grid;
+    grid-template-rows: auto 1fr; /* header takes auto height, grid fills remaining */
+    height: 100vh; /* full screen height */
+    width: 100vw;
+    overflow: hidden;
+}

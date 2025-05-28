@@ -3,7 +3,54 @@
     grid-template-columns: repeat(2, auto);
     grid-gap: 20px;
 }
+.answer-button {
+    background-color: #eb631e;
+    
+    aspect-ratio: 1;
+    flex-grow: 1;
+
+    border-radius: 5%;
+    border:none;
+
+    text-align: center;
+    font-family: Copperplate;
+    font-size: 200%;
+    color: rgb(255, 255, 255);
+
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.answer-button:hover {
+    background-color: #aa4817;
+}
 
 .correct {
-    background-color: aquamarine;
+    background-color: greenyellow;
+    
+    aspect-ratio: 1;
+    flex-grow: 1;
+
+    border-radius: 5%;
+    border:none;
+
+    text-align: center;
+    font-family: Copperplate;
+    font-size: 200%;
+    color: white;
+}
+
+.wrong {
+    background-color: red;
+    
+    aspect-ratio: 1;
+    flex-grow: 1;
+
+    border-radius: 5%;
+    border:none;
+
+    text-align: center;
+    font-family: Copperplate;
+    font-size: 200%;
+    color: white;
 }

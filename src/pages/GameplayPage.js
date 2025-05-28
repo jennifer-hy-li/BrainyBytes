@@ -12,19 +12,20 @@ function GameplayPage() {
         <div className="dark-wrapper-grid">
             {/* Goal/points col */}
             <div>
-                <h>like this {levelIndex}</h>
-                <h>and this {topic.name}</h>
+                <h className = 'question-text'>Goal for {topic.name} level {level}:</h>
+                <h className = 'question-text'> 1000pts </h>
             </div>
             
 
             {/* question */}
             <div>
-                <h> QUESTION1: {levelData[0].question}</h>
+                <h className = 'question-text'> QUESTION1: {levelData[0].question} ?</h>
             </div>
             
             {/* time remain */}
             <div>
-                <h> time remaining</h>
+                <h className = 'question-text'> time remaining:</h>
+                <h className = 'question-text'> 00:00</h>
             </div>
 
             {/* answers */}

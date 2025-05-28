@@ -1,23 +1,24 @@
 .play-button {
-  display: inline-block;
-  background-color: #eb631e;
+  background-color: #888ED1;
 
-  border-radius: 30%;
+  
+
+  color: white;
   border: none;
-
-  text-align: center;
-  font-family: Monaco;
-  font-size: 100%;
-  color: rgb(255, 255, 255);
-
-  cursor: pointer;
-  transition-duration: 0.4s;
-  margin: 30px;
-
+  border-radius: 999px; /* softer than 50% on larger buttons */
   padding: 12px 24px;
-  text-decoration: none; /* Important: removes underline */
+  margin: 20px;
+  width: 50vw;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .play-button:hover {
-  background-color: #aa4817;
+  background-color: #5f6492;
 }
