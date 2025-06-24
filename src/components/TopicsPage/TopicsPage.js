@@ -15,7 +15,8 @@ function TopicsPage() {
     // - Add user account info on sides
     // - clean up styling
     return (
-        <div>
+        <div className='topic-page'>
+            <h1 className = 'header-title'>BrainyBYTES</h1>
             <TopicSlider topics={topics} />
         </div>
         
